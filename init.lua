@@ -11,7 +11,6 @@ require "user.comment"
 require "user.gitsigns"
 require "user.nvim-tree"
 require "user.bufferline"
-require "user.lualine"
 require "user.toggleterm"
 require "user.project"
 require "user.impatient"
@@ -22,4 +21,10 @@ require "user.lsp"
 require "user.dap"
 require ('moonlight').set()
 
-
+require('lualine').setup {
+  options = {
+    -- ... your lualine config
+    theme = 'moonlight'
+    -- ... your lualine config
+  }
+}
