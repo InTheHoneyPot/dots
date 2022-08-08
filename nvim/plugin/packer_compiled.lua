@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["DAPInstall.nvim"] = {
+    loaded = true,
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/DAPInstall.nvim",
+    url = "https://github.com/ravenxrz/DAPInstall.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -114,11 +119,6 @@ _G.packer_plugins = {
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -128,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  ["gruvbuddy.nvim"] = {
-    loaded = true,
-    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/gruvbuddy.nvim",
-    url = "https://github.com/tjdevries/gruvbuddy.nvim"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -149,10 +144,15 @@ _G.packer_plugins = {
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["neosolarized8.nvim"] = {
+  ["material.nvim"] = {
     loaded = true,
-    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/neosolarized8.nvim",
-    url = "https://github.com/deriamis/neosolarized8.nvim"
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
+  ["moonlight.nvim"] = {
+    loaded = true,
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/moonlight.nvim",
+    url = "https://github.com/shaunsingh/moonlight.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -168,6 +168,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -199,6 +209,12 @@ _G.packer_plugins = {
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  orgmode = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0" },
+    loaded = true,
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/orgmode",
+    url = "https://github.com/nvim-orgmode/orgmode"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -229,14 +245,18 @@ _G.packer_plugins = {
     path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["which-key.nvim"] = {
+  ["vim-illuminate"] = {
     loaded = true,
-    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/which-key.nvim",
-    url = "https://github.com/folke/which-key.nvim"
+    path = "/Users/nathanieltost/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: orgmode
+time([[Config for orgmode]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0", "config", "orgmode")
+time([[Config for orgmode]], false)
 if should_profile then save_profiles() end
 
 end)
