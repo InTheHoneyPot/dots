@@ -12,6 +12,7 @@ packer.startup(function(use)
     require('orgmode').setup {}
   end
   }
+  use 'akinsho/org-bullets.nvim'
 
   -- Colorschemes
   use 'shaunsingh/moonlight.nvim'
