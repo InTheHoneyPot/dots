@@ -1,25 +1,20 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.autocommands"
-require "user.colorscheme"
-require "user.cmp"
-require "user.telescope"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.gitsigns"
-require "user.nvim-tree"
-require "user.bufferline"
-require "user.toggleterm"
-require "user.project"
-require "user.impatient"
-require "user.illuminate"
-require "user.indentline"
-require "user.alpha"
-require "user.lsp"
-require "user.dap"
-require ('moonlight').set()
+require('bonsai.base')
+require('bonsai.highlights')
+require('bonsai.maps')
+require('bonsai.plugins')
+
+local has = vim.fn.has
+local is_mac = has "macunix"
+local is_win = has "win32"
+
+if is_mac then
+  require('bonsai.macos')
+end
+if is_win then
+  require('bonsai.windows')
+end
+
+require('moonlight').set()
 --require "user.material"
 
 require('lualine').setup {
@@ -29,13 +24,3 @@ require('lualine').setup {
     -- ... your lualine config
   }
 }
-
-require('orgmode').setup_ts_grammar()
-
-require('orgmode').setup({
-  org_agenda_files = {'~/Notes/org/*', '~/my-orgs/**/*'},
-  org_default_notes_file = '~/Notes/org/refile.org',
-  mappings = {
-    global = {}
-  }
-})
