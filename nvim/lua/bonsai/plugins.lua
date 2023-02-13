@@ -1,53 +1,61 @@
-local status, packer = pcall(require, "packer")
-if (not status) then
-  print("Packer is not installed")
-  return
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
-vim.cmd [[packadd packer.nvim]]
-
-packer.startup(function(use)
-  use 'wbthomason/packer.nvim'
-  use { "nvim-orgmode/orgmode", config = function()
+require('lazy').setup({
+  { "nvim-orgmode/orgmode", config = function()
     require('orgmode').setup {}
   end
-  }
-  use 'akinsho/org-bullets.nvim'
+  },
+  'akinsho/org-bullets.nvim',
 
   -- Colorschemes
-  use 'shaunsingh/moonlight.nvim'
-  use 'marko-cerovac/material.nvim'
-  use 'nvim-lualine/lualine.nvim' -- Statusline
-  use 'nvim-lua/plenary.nvim' -- Common utilities
-  use 'onsails/lspkind-nvim' -- vscode-like pictograms
-  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/nvim-cmp' -- Completion
-  use 'neovim/nvim-lspconfig' -- LSP
-  use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'goolord/alpha-nvim'
-  use 'L3MON4D3/LuaSnip'
-  use {
+  'shaunsingh/moonlight.nvim',
+  'marko-cerovac/material.nvim',
+  'nvim-lualine/lualine.nvim', -- Statusline
+  'nvim-lua/plenary.nvim', -- Common utilities
+  'onsails/lspkind-nvim', -- vscode-like pictograms
+  'hrsh7th/cmp-buffer', -- nvim-cmp source for buffer words
+  'hrsh7th/cmp-nvim-lsp', -- nvim-cmp source for neovim's built-in LSP
+  'hrsh7th/nvim-cmp', -- Completion
+  'neovim/nvim-lspconfig', -- LSP
+  'jose-elias-alvarez/null-ls.nvim', -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  'goolord/alpha-nvim',
+  'L3MON4D3/LuaSnip',
+  {
     'nvim-treesitter/nvim-treesitter',
-    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-  }
-  use 'kyazdani42/nvim-web-devicons' -- File icons
-  use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-file-browser.nvim'
-  use 'windwp/nvim-autopairs'
-  use 'windwp/nvim-ts-autotag'
-  use 'norcalli/nvim-colorizer.lua'
-  use 'folke/zen-mode.nvim'
-  use({
+    build = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    }
+  },
+  'nvim-telescope/telescope.nvim',
+  'nvim-telescope/telescope-file-browser.nvim',
+  'windwp/nvim-autopairs',
+  'windwp/nvim-ts-autotag',
+  'norcalli/nvim-colorizer.lua',
+  'folke/zen-mode.nvim',
+  ({
     "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-  })
-  use 'akinsho/nvim-bufferline.lua'
+    build = function() vim.fn["mkdp#util#install"]() end,
+  }),
+  'akinsho/nvim-bufferline.lua',
   -- use 'github/copilot.vim'
-  use "akinsho/toggleterm.nvim"
-  use 'lewis6991/gitsigns.nvim'
-  use 'dinhhuy258/git.nvim' -- For git blame & browse
-  use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' } }
-end)
+  "akinsho/toggleterm.nvim",
+  'lewis6991/gitsigns.nvim',
+  'dinhhuy258/git.nvim', -- For git blame & browse
+  { 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons' } }
+})
