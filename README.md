@@ -6,9 +6,9 @@ Nathaniel's dotfiles
 - Fedora Config Files
 - NeoVim config
   - Plugins are managed with Lazy Loading
-- fish config
+- Fish config
   
-## Shell setup (macOS & Linux)
+## Shell Setup 
 
 - [Fish shell](https://fishshell.com/)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
