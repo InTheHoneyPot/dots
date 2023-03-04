@@ -14,13 +14,15 @@ if is_win then
   require('bonsai.windows')
 end
 
-require('moonlight').set()
+vim.cmd [[colorscheme pywal]]
+--vim.cmd [[colorscheme NeoSolarized]]
+--require('moonlight').set()
 --require "user.material"
 
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'moonlight'
+    theme = 'pywal-nvim'
     -- ... your lualine config
   }
 }

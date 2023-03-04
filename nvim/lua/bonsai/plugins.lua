@@ -21,8 +21,9 @@ require('lazy').setup({
   'akinsho/org-bullets.nvim',
 
   -- Colorschemes
+  'AlphaTechnolog/pywal.nvim',
   'shaunsingh/moonlight.nvim',
-  'marko-cerovac/material.nvim',
+  'Tsuzat/NeoSolarized.nvim',
   'nvim-lualine/lualine.nvim', -- Statusline
   'nvim-lua/plenary.nvim', -- Common utilities
   'onsails/lspkind-nvim', -- vscode-like pictograms
