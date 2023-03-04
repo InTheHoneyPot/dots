@@ -1,0 +1,13 @@
+[General]
+Default Identity=1069465825
+
+[Identity #0]
+Default Domain=fedora
+Disable Fcc=false
+Identity=Bonsai
+Image Location=
+Inline Signature=
+Name=Bonsai
+Override Encryption Defaults=true
+Signature Enabled=false
+uoid=1069465825

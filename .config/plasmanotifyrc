@@ -1,0 +1,8 @@
+[Applications][com.spotify.Client]
+ShowPopups=false
+
+[Applications][firefox]
+Seen=true
+
+[Applications][org.gnome.Evolution]
+Seen=true

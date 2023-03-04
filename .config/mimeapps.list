@@ -1,0 +1,7 @@
+[Added Associations]
+application/x-desktop=nvim.desktop;org.kde.kwrite.desktop;org.kde.kate.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;
+
+[Default Applications]
+application/x-desktop=nvim.desktop;
+x-scheme-handler/x-github-client=github-desktop.desktop
+x-scheme-handler/x-github-desktop-auth=github-desktop.desktop

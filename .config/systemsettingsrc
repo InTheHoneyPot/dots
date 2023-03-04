@@ -1,0 +1,20 @@
+[KFileDialog Settings]
+Recent Files[$e]=sxhkd,file:$HOME/Pictures/profile_pics/profile_pic-modified.png,file:///usr/bin/sxhkd
+Recent URLs[$e]=file:///usr/bin/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,file:$HOME/Pictures/profile_pics/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+DP-0 Height 3440x1440 DP-0=520
+DP-0 Width 3440x1440 DP-0=468
+
+[MainWindow]
+DP-0=DP-0
+DP-0 Height 3440x1440 DP-0=1371
+DP-0 Width 3440x1440 DP-0=1020
+DP-0 XPosition 3440x1440 DP-0=4
+DP-0 YPosition 3440x1440 DP-0=740
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA/wAAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Unknown-1 Height 1024x768 Unknown-1=691
+Unknown-1 Width 1024x768 Unknown-1=922

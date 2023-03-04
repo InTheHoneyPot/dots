@@ -1,0 +1,24 @@
+[Data Source]
+DisplayName=12tostn@gmail.com
+Enabled=true
+Parent=
+
+[Authentication]
+Host=
+Method=Google
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=12tostn@gmail.com
+CredentialName=
+IsExternal=false
+
+[Collection]
+BackendName=google
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=12tostn@gmail.com
+MailEnabled=true
+AllowSourcesRename=false
+CalendarUrl=
+ContactsUrl=

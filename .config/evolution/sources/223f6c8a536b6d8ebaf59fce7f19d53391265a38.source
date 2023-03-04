@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=12tostn@gmail.com
+Enabled=true
+Parent=bffd252ec2a4c1918cd7bfcfacaf9332a280bd28
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=e715f32e2d3aad0f4b9128f4dd205001bacebdc3
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://b5a7908ed33cef949ca1c5375d6ddbfc52173835/%5bGmail%5d/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=folder://local/Templates
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=12tostn@gmail.com
+Aliases=
+Name=Nathaniel Tost
+Organization=
+ReplyTo=
+SignatureUid=none

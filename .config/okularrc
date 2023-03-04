@@ -1,0 +1,20 @@
+[Desktop Entry]
+FullScreen=false
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/profile_pics/neofetch/profile_pic_small.jpg,file:$HOME/Pictures/profile_pics/neofetch/profile_pic_small.jpg
+Recent URLs[$e]=file:$HOME/Pictures/profile_pics/neofetch/
+detailViewIconSize=16
+
+[MainWindow]
+DP-0=DP-0
+DP-0 Height 3440x1440 DP-0=687
+DP-0 Width 3440x1440 DP-0=1714
+DP-0 XPosition 3440x1440 DP-0=4
+DP-0 YPosition 3440x1440 DP-0=57
+State=AAAA/wAAAAD9AAAAAAAABrIAAAJlAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/profile_pics/neofetch/profile_pic.jpg
+Name1[$e]=profile_pic.jpg

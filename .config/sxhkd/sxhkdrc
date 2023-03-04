@@ -1,0 +1,3 @@
+# rofi
+super + @space
+  rofi -show drun

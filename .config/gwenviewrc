@@ -1,0 +1,36 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+SideBarPage=folders
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+Recent Files[$e]=profile_pic_small.jpg,file:$HOME/Pictures/profile_pics/neofetch/profile_pic_small.jpg
+Recent URLs[$e]=file:$HOME/Pictures/profile_pics/neofetch/
+detailViewIconSize=16
+
+[MainWindow]
+DP-0=DP-0
+DP-0 Height 3440x1440 DP-0=734
+DP-0 Width 3440x1440 DP-0=981
+DP-0 XPosition 3440x1440 DP-0=4
+DP-0 YPosition 3440x1440 DP-0=706
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA9UAAAKwAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/profile_pics/neofetch/profile_pic_small.jpg
+File2[$e]=$HOME/Pictures/wallpapers/jacuzzi.png
+File3[$e]=$HOME/Pictures/wallpapers/sixth_station.png
+Name1[$e]=profile_pic_small.jpg
+Name2[$e]=jacuzzi.png
+Name3[$e]=sixth_station.png
+
+[SideBar]
+InformationSplitterSizes=216,259
+IsVisible ViewMode=true
+SideBarSplitterSizes=251,729

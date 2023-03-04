@@ -1,0 +1,34 @@
+2023-03-04T17:15:34.013Z - info: [ui] [AppStore] loading 0 repositories from store
+2023-03-04T17:15:34.045Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2023-03-04T17:15:34.051Z - info: [ui] launching: 3.2.0-linux1 (Linux 6.1.13-200.fc37.x86_64)
+2023-03-04T17:15:34.051Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-03-04T17:15:34.066Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2023-03-04T17:15:34.146Z - info: [ui] Opt in reported.
+2023-03-04T17:15:34.323Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2023-03-04T17:15:36.236Z - info: [ui] [Welcome] advancing to step: SignInToDotComWithBrowser
+2023-03-04T17:15:36.237Z - info: [ui] [SignInStore] initializing OAuth flow
+2023-03-04T17:15:36.241Z - info: [main] opening in browser: https://github.com/login/oauth/authorize?client_id=3a723b10ac5575cc5bb9&scope=repo%20user%20workflow&state=7db723ae-40c3-4dca-88d1-00c326e70d97
+2023-03-04T17:15:36.241Z - info: [ui] [Welcome] current sign in state not found. ignoring...
+2023-03-04T17:15:36.455Z - info: [ui] [Welcome] kind Authentication is the same as Authentication. ignoring...
+2023-03-04T17:15:36.784Z - info: [main] Received possible protocol arguments: 3
+2023-03-04T17:15:36.785Z - info: [main] Processing protocol url
+2023-03-04T17:15:36.785Z - info: [ui] [Dispatcher] requesting authenticated user
+2023-03-04T17:15:36.789Z - info: [ui] [Welcome] kind Authentication is the same as Authentication. ignoring...
+2023-03-04T17:15:36.826Z - info: [main] Received possible protocol arguments: 2
+2023-03-04T17:15:37.274Z - info: [ui] [SignInStore] account resolved
+2023-03-04T17:15:37.275Z - info: [ui] [AppStore] adding account InTheHoneyPot (InTheHoneyPot) to store
+2023-03-04T17:15:37.275Z - info: [ui] [Welcome] advancing to step: ConfigureGit
+2023-03-04T17:15:37.303Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2023-03-04T17:15:37.459Z - info: [ui] Subscribed 'InTheHoneyPot' to Alive channel
+2023-03-04T17:15:37.521Z - info: [ui] [Welcome] no sign in step found. ignoring...
+2023-03-04T17:17:23.001Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/InTheHoneyPot/Github-Data-Analysis.git - InTheHoneyPot (has token)
+2023-03-04T17:17:23.666Z - info: [ui] [AppStore] adding repository at /home/bonsai/Documents/GitHub/Github-Data-Analysis to store
+2023-03-04T17:17:23.953Z - info: [ui] [BranchPruner] No branches to prune.
+2023-03-04T17:17:26.473Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Github-Data-Analysis - InTheHoneyPot (has token)
+2023-03-04T17:17:34.221Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.0s of which 0.0s paused, total 0.0s
+2023-03-04T17:17:41.319Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/InTheHoneyPot/moonlight-nvim-lua.git - InTheHoneyPot (has token)
+2023-03-04T17:17:41.811Z - info: [ui] [AppStore] adding repository at /home/bonsai/Documents/GitHub/moonlight-nvim-lua to store
+2023-03-04T17:17:41.884Z - info: [ui] [BranchPruner] Last prune took place 18 seconds ago - skipping
+2023-03-04T17:17:42.051Z - info: [ui] [BranchPruner] No branches to prune.
+2023-03-04T17:17:44.359Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: moonlight-nvim-lua - InTheHoneyPot (has token)
+2023-03-04T17:19:30.565Z - info: [ui] [Timing] Action 'create commit' for 'InTheHoneyPot/moonlight-nvim-lua' took 0.052s
