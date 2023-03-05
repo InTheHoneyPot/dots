@@ -15,7 +15,6 @@ Nathaniel's dotfiles
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme. Use version 5: `fisher install ilancosman/tide@v5`
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
 - [z for fish](https://github.com/jethrokuan/z) - Directory jumping
-- [peco](https://github.com/peco/peco) - Interactive filtering
 
 ## Fedora Desktop
 - [Pywal - Wallpaper Colorscheme] (https://github.com/dylanaraps/pywal) 
