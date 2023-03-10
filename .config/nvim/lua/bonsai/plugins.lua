@@ -36,7 +36,6 @@ require('lazy').setup({
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',
   'goolord/alpha-nvim',
-  'L3MON4D3/LuaSnip',
   {
     'nvim-treesitter/nvim-treesitter',
     build = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
@@ -49,7 +48,6 @@ require('lazy').setup({
   'windwp/nvim-autopairs',
   'windwp/nvim-ts-autotag',
   'norcalli/nvim-colorizer.lua',
-  'folke/zen-mode.nvim',
   ({
     "iamcco/markdown-preview.nvim",
     build = function() vim.fn["mkdp#util#install"]() end,
