@@ -10,11 +10,11 @@ HoneyPot's dotfiles
   
 ## Shell Setup 
 
-- [Fish shell](https://fishshell.com/)
+- [Fish Shell](https://fishshell.com/)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin Manager
 - [Tide](https://github.com/IlanCosman/tide) - Shell theme. Use version 5: `fisher install ilancosman/tide@v5`
-- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
-- [z for fish](https://github.com/jethrokuan/z) - Directory jumping
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
+- [Z for Fish](https://github.com/jethrokuan/z) - Directory jumping
 
 ## Fedora (KDE Plasma) Desktop
 - [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
