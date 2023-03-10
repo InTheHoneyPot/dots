@@ -1,4 +1,4 @@
-Nathaniel's dotfiles
+HoneyPot's dotfiles
 
 **Warning**: Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
@@ -38,7 +38,7 @@ Nathaniel's dotfiles
 - [Lazy](https://github.com/folke/lazy.nvim) - Plugin Manager
 - [Plenary](https://github.com/nvim-lua/plenary.nvim) - Asynchronus Programming Module
 - [Lsp-Config](https://github.com/neovim/nvim-lspconfig) - LSP Configuration
-- [Null-Ls](https://github.com/jose-elias-alvarez/null-ls.nvim) - LSP Diagnostics & Code Actions
+- [Null-LS](https://github.com/jose-elias-alvarez/null-ls.nvim) - LSP Diagnostics & Code Actions
 - [Mason](https://github.com/williamboman/mason.nvim) - Package Manager for LSP servers, DAP servers, linters, and formatters
 - [Mason-Lsp-Config](https://github.com/williamboman/mason-lspconfig.nvim) - Integrate Mason & LSP Config
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Language Parsers, Queries and Modules (e.g. Highlighting)
