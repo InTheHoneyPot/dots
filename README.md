@@ -18,7 +18,7 @@ HoneyPot's dotfiles
 
 ## Fedora (KDE Plasma) Desktop
 - [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
-- [Pywal(https://github.com/dylanaraps/pywal) - Wallpaper Colorscheme Integration
+- [Pywal](https://github.com/dylanaraps/pywal) - Wallpaper Colorscheme Integration
     - [Pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) - Nvim Integration
 - [Cava](https://github.com/karlstav/cava) - Audio Visualizer
 - [Kitty](https://github.com/kovidgoyal/kitty) - Terminal
