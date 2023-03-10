@@ -14,7 +14,9 @@ if is_win then
   require('bonsai.windows')
 end
 
-vim.cmd [[colorscheme pywal]]
+--vim.cmd [[colorscheme pywal]]
+vim.cmd [[colorscheme gruvbox]]
+vim.o.background = "dark"
 --vim.cmd [[colorscheme NeoSolarized]]
 --require('moonlight').set()
 --require "user.material"
