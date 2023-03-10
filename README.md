@@ -24,7 +24,8 @@ Nathaniel's dotfiles
 - [Rofi - Task Manager] (https://github.com/davatorium/rofi)
 - [NeoFetch] (https://github.com/dylanaraps/neofetch)
 - [sxhkd - Keybindings] (https://github.com/baskerville/sxhkd)
-- Latte Dock & Spacers
-- KDE Window Tiling
-- Minimal Desktop Indicator
-- Better In-Line Clock
+- KDE Extensions
+  - Latte Dock & Spacers
+  - KDE Window Tiling
+  - Minimal Desktop Indicator
+  - Better In-Line Clock
