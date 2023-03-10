@@ -33,6 +33,7 @@ Nathaniel's dotfiles
   - Better In-Line Clock
 
 ## NVIM Setup
+- [Neovim](https://github.com/neovim/neovim) - IDE
 - [Lazy](https://github.com/folke/lazy.nvim) - Plugin Manager
 - [Plenary](https://github.com/nvim-lua/plenary.nvim) - Asynchronus Programming Module
 - [Lsp-Config](https://github.com/neovim/nvim-lspconfig) - LSP Configuration
