@@ -18,13 +18,13 @@ Nathaniel's dotfiles
 
 ## Fedora (KDE Plasma) Desktop
 - [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
-- [Pywal - Wallpaper Colorscheme] (https://github.com/dylanaraps/pywal) 
-    - [Pywal.nvim - NVIM Integration] (https://github.com/AlphaTechnolog/pywal.nvim)
-- [Cava - Audio Visualizer] (https://github.com/karlstav/cava)
-- [Kitty - Terminal] (https://github.com/kovidgoyal/kitty)
-- [Rofi - Task Manager] (https://github.com/davatorium/rofi)
-- [NeoFetch] (https://github.com/dylanaraps/neofetch)
-- [sxhkd - Keybindings] (https://github.com/baskerville/sxhkd)
+- [Pywal] (https://github.com/dylanaraps/pywal) - Wallpaper Colorscheme Integration
+    - [Pywal.nvim](https://github.com/AlphaTechnolog/pywal.nvim) - Nvim Integration
+- [Cava](https://github.com/karlstav/cava) - Audio Visualizer
+- [Kitty](https://github.com/kovidgoyal/kitty) - Terminal
+- [Rofi](https://github.com/davatorium/rofi) - Application Launcher
+- [NeoFetch](https://github.com/dylanaraps/neofetch)
+- [sxhkd](https://github.com/baskerville/sxhkd) - Keybindings
 - KDE Setup
   - Bismuth Window Decorations
   - Breeze Dark Theme  
