@@ -17,6 +17,7 @@ Nathaniel's dotfiles
 - [z for fish](https://github.com/jethrokuan/z) - Directory jumping
 
 ## Fedora (KDE Plasma) Desktop
+- [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
 - [Pywal - Wallpaper Colorscheme] (https://github.com/dylanaraps/pywal) 
     - [Pywal.nvim - NVIM Integration] (https://github.com/AlphaTechnolog/pywal.nvim)
 - [Cava - Audio Visualizer] (https://github.com/karlstav/cava)
