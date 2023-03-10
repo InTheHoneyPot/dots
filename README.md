@@ -49,7 +49,7 @@ Nathaniel's dotfiles
 - [Cmp-Buffer](https://github.com/hrsh7th/cmp-buffer) - Source for Buffer Words
 - [Cmp-Lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Source for LSP Completion
 - [ToggleTerm](https://github.com/akinsho/toggleterm.nvim) - Toggle Terminal
-- [NVIM Tree](https://github.com/nvim-tree/nvim-tree.lua) - VSCode File Tree
+- [Nvim Tree](https://github.com/nvim-tree/nvim-tree.lua) - VSCode File Tree
 - [Git](https://github.com/dinhhuy258/git.nvim) - VIM Fugitive Git Commands
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
 - [Autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs for Brackets, Quotes and Parenthesis
