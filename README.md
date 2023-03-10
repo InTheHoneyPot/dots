@@ -24,7 +24,9 @@ Nathaniel's dotfiles
 - [Rofi - Task Manager] (https://github.com/davatorium/rofi)
 - [NeoFetch] (https://github.com/dylanaraps/neofetch)
 - [sxhkd - Keybindings] (https://github.com/baskerville/sxhkd)
-- KDE Extensions
+- KDE Setup
+  - Bismuth Window Decorations
+  - Breeze Dark Theme  
   - Latte Dock & Spacers
   - KDE Window Tiling
   - Minimal Desktop Indicator
