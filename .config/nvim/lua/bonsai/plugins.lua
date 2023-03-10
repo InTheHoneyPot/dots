@@ -21,6 +21,7 @@ require('lazy').setup({
   'akinsho/org-bullets.nvim',
 
   -- Colorschemes
+  'ellisonleao/gruvbox.nvim'.
   'AlphaTechnolog/pywal.nvim',
   'shaunsingh/moonlight.nvim',
   'Tsuzat/NeoSolarized.nvim',
