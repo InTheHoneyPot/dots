@@ -5,7 +5,7 @@ Nathaniel's dotfiles
 ## Contents
 - Fish Config
 - Fedora Config
-- NeoVim Config
+- Neovim Config
   - Plugins are managed with Lazy Loading
   
 ## Shell Setup 
