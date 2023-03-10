@@ -3,9 +3,9 @@ Nathaniel's dotfiles
 **Warning**: Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ## Contents
-- Fish config
-- Fedora Config Files
-- NeoVim config
+- Fish Config
+- Fedora Config
+- NeoVim Config
   - Plugins are managed with Lazy Loading
   
 ## Shell Setup 
