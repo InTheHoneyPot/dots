@@ -45,8 +45,6 @@ Nathaniel's dotfiles
 - [Treesitter-Textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) - Select, Move or Swap Text Objects
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy Finder
 - [Telescope-File-Browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) - Create, Delete, Rename and Move Files
-- [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Statusline
-- [LspKind](https://github.com/onsails/lspkind.nvim) - VSCode Pictograms
 - [Cmp](https://github.com/hrsh7th/nvim-cmp) - Completion
 - [Cmp-Buffer](https://github.com/hrsh7th/cmp-buffer) - Source for Buffer Words
 - [Cmp-Lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Source for LSP Completion
@@ -59,5 +57,7 @@ Nathaniel's dotfiles
 - [Markdown-Preview](https://github.com/iamcco/markdown-preview.nvim) - Markdown Preview
 - [Alpha](https://github.com/goolord/alpha-nvim) - NVIM Greeter
 - [Gruvbox Colorscheme](https://github.com/ellisonleao/gruvbox.nvim) - Gruvbox Dark Colorscheme
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Statusline
+- [LspKind](https://github.com/onsails/lspkind.nvim) - VSCode Pictograms
 
 
