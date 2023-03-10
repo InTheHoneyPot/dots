@@ -56,5 +56,6 @@ Nathaniel's dotfiles
 - [Autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose and Autorename HTML Tags
 - [Markdown-Preview](https://github.com/iamcco/markdown-preview.nvim) - Markdown Preview
 - [Alpha](https://github.com/goolord/alpha-nvim) - NVIM Greeter
+- [Gruvbox Colorscheme](https://github.com/ellisonleao/gruvbox.nvim) - Gruvbox Dark Colorscheme
 
 
