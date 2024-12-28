@@ -13,7 +13,32 @@ dashboard.section.header.val = {
   [[88       d8 8b       d8 88       88  `"Y8ba,  ,adPPPPP88 88]],
   [[88b,   ,a8" "8a,   ,a8" 88       88 aa    ]8I 88,    ,88 88]],
   [[8Y"Ybbd8"'   `"YbbdP"'  88       88 `"YbbdP"' `"8bbdP"Y8 88]],
+  [[                                                            ]],
+  [[                          &]],
+  [[                         &  &&&&&&]],
+  [[                           &&& &|\&&]],
+  [[                           &&&&&&]],
+  [[                           &&&&&\& &        & &]],
+  [[                          &&&&&&&&|\ /|&&&&&&&]],
+  [[                               /&\|/ _&&&\&	&]],
+  [[                                 \/~|&&&_&_/]],
+  [[                                  /||& & & &&  &&]],
+  [[                                  \/|\   &	&&/&&&]],
+  [[           &&& &                   |//&/ /&	/&& &&&&&]],
+  [[            && /&&               |/~~& &_&&  &&&&&&&]],
+  [[            &  \&&&             /|/  &  &     & &]],
+  [[              &&\_             \/~]],
+  [[             &&&&|_\|          \\_]],
+  [[                 \_  \_|_\\_\_\_/~\|]],
+  [[              & &   & \  \\\___\_~\/~]],
+  [[           &&&  &&&&&      \     ///~]],
+  [[            &&& &&&&&___\__\    /~/~]],
+  [[                  :___________./~~~\.___________:]],
+  [[                   \                           / ]],
+  [[                    \_________________________/ ]],
+  [[                   (_)                     (_) ]],
 }
+
 dashboard.section.buttons.val = {
   dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
   dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
@@ -24,7 +49,7 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "Welcome Nathaniel"
+  return "Welcome Yukon"
 end
 
 dashboard.section.footer.val = footer()

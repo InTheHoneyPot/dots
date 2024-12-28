@@ -14,24 +14,20 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 require('lazy').setup({
-  { "nvim-orgmode/orgmode", config = function()
-    require('orgmode').setup {}
-  end
-  },
-  'akinsho/org-bullets.nvim',
 
   -- Colorschemes
-  'ellisonleao/gruvbox.nvim'.
-  'AlphaTechnolog/pywal.nvim',
+  'ellisonleao/gruvbox.nvim',
   'shaunsingh/moonlight.nvim',
   'Tsuzat/NeoSolarized.nvim',
-  'nvim-lualine/lualine.nvim', -- Statusline
-  'nvim-lua/plenary.nvim', -- Common utilities
-  'onsails/lspkind-nvim', -- vscode-like pictograms
-  'hrsh7th/cmp-buffer', -- nvim-cmp source for buffer words
-  'hrsh7th/cmp-nvim-lsp', -- nvim-cmp source for neovim's built-in LSP
-  'hrsh7th/nvim-cmp', -- Completion
-  'neovim/nvim-lspconfig', -- LSP
+
+  -- Plugins
+  'nvim-lualine/lualine.nvim',       -- Statusline
+  'nvim-lua/plenary.nvim',           -- Common utilities
+  'onsails/lspkind-nvim',            -- vscode-like pictograms
+  'hrsh7th/cmp-buffer',              -- nvim-cmp source for buffer words
+  'hrsh7th/cmp-nvim-lsp',            -- nvim-cmp source for neovim's built-in LSP
+  'hrsh7th/nvim-cmp',                -- Completion
+  'neovim/nvim-lspconfig',           -- LSP
   'jose-elias-alvarez/null-ls.nvim', -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   'williamboman/mason.nvim',
   'williamboman/mason-lspconfig.nvim',
@@ -43,19 +39,19 @@ require('lazy').setup({
       'nvim-treesitter/nvim-treesitter-textobjects',
     }
   },
+
   'nvim-telescope/telescope.nvim',
   'nvim-telescope/telescope-file-browser.nvim',
   'windwp/nvim-autopairs',
   'windwp/nvim-ts-autotag',
   'norcalli/nvim-colorizer.lua',
+  'folke/zen-mode.nvim',
   ({
     "iamcco/markdown-preview.nvim",
     build = function() vim.fn["mkdp#util#install"]() end,
   }),
   'akinsho/nvim-bufferline.lua',
-  -- use 'github/copilot.vim'
   "akinsho/toggleterm.nvim",
   'lewis6991/gitsigns.nvim',
-  'dinhhuy258/git.nvim', -- For git blame & browse
-  { 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons' } }
+  'dinhhuy258/git.nvim',
 })

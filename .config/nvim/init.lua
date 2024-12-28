@@ -15,16 +15,16 @@ if is_win then
 end
 
 --vim.cmd [[colorscheme pywal]]
+--vim.cmd [[colorscheme NeoSolarized]]
 vim.cmd [[colorscheme gruvbox]]
 vim.o.background = "dark"
---vim.cmd [[colorscheme NeoSolarized]]
 --require('moonlight').set()
 --require "user.material"
 
 require('lualine').setup {
   options = {
     -- ... your lualine config
-    theme = 'pywal-nvim'
+    theme = 'gruvbox'
     -- ... your lualine config
   }
 }
