@@ -23,13 +23,6 @@ HoneyPot's dotfiles
 - [Rofi](https://github.com/davatorium/rofi) - Application Launcher
 - [NeoFetch](https://github.com/dylanaraps/neofetch)
 - [sxhkd](https://github.com/baskerville/sxhkd) - Keybindings
-- KDE Setup
-  - Bismuth Window Decorations
-  - Breeze Dark Theme  
-  - Latte Dock & Spacers
-  - KDE Window Tiling
-  - Minimal Desktop Indicator
-  - Better In-Line Clock
 
 ## NVIM Setup
 - [Neovim](https://github.com/neovim/neovim) - IDE
@@ -51,7 +44,6 @@ HoneyPot's dotfiles
 - [Git](https://github.com/dinhhuy258/git.nvim) - VIM Fugitive Git Commands
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
 - [Autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs for Brackets, Quotes and Parenthesis
-- [Autotag](https://github.com/windwp/nvim-ts-autotag) - Autoclose and Autorename HTML Tags
 - [Markdown-Preview](https://github.com/iamcco/markdown-preview.nvim) - Markdown Preview
 - [Alpha](https://github.com/goolord/alpha-nvim) - NVIM Greeter
 - [Gruvbox Colorscheme](https://github.com/ellisonleao/gruvbox.nvim) - Gruvbox Dark Colorscheme
