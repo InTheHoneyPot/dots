@@ -14,17 +14,21 @@ if is_win then
   require('bonsai.windows')
 end
 
---vim.cmd [[colorscheme pywal]]
---vim.cmd [[colorscheme NeoSolarized]]
-vim.cmd [[colorscheme gruvbox]]
-vim.o.background = "dark"
---require('moonlight').set()
---require "user.material"
+vim.cmd("colorscheme gruvbox")
+vim.opt.termguicolors = true
+vim.opt.background = 'dark'
 
 require('lualine').setup {
   options = {
-    -- ... your lualine config
     theme = 'gruvbox'
-    -- ... your lualine config
   }
 }
+
+vim.cmd([[
+  highlight Normal guibg=NONE ctermbg=NONE
+]])
+
+
+vim.cmd([[
+  highlight SignColumn guibg=NONE ctermbg=NONE
+]])

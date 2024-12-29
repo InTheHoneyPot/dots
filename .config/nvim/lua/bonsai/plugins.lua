@@ -17,8 +17,6 @@ require('lazy').setup({
 
   -- Colorschemes
   'ellisonleao/gruvbox.nvim',
-  'shaunsingh/moonlight.nvim',
-  'Tsuzat/NeoSolarized.nvim',
 
   -- Plugins
   'nvim-lualine/lualine.nvim',       -- Statusline
@@ -43,9 +41,7 @@ require('lazy').setup({
   'nvim-telescope/telescope.nvim',
   'nvim-telescope/telescope-file-browser.nvim',
   'windwp/nvim-autopairs',
-  'windwp/nvim-ts-autotag',
   'norcalli/nvim-colorizer.lua',
-  'folke/zen-mode.nvim',
   ({
     "iamcco/markdown-preview.nvim",
     build = function() vim.fn["mkdp#util#install"]() end,
