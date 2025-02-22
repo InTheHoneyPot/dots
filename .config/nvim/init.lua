@@ -14,20 +14,13 @@ if is_win then
   require('bonsai.windows')
 end
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd [[colorscheme everforest]]
 vim.opt.termguicolors = true
 vim.opt.background = 'dark'
-
-require('lualine').setup {
-  options = {
-    theme = 'gruvbox'
-  }
-}
 
 vim.cmd([[
   highlight Normal guibg=NONE ctermbg=NONE
 ]])
-
 
 vim.cmd([[
   highlight SignColumn guibg=NONE ctermbg=NONE

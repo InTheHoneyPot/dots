@@ -17,9 +17,21 @@ require('lazy').setup({
 
   -- Colorschemes
   'ellisonleao/gruvbox.nvim',
+  'neanias/everforest-nvim',
 
   -- Plugins
-  'nvim-lualine/lualine.nvim',       -- Statusline
+  {
+    'nvim-lualine/lualine.nvim',
+    config = function()
+      require('lualine').setup {
+        options = {
+          theme = 'gruvbox', -- Explicitly set lualine to gruvbox
+          section_separators = { left = '', right = '' },
+          component_separators = { left = '', right = '' },
+        }
+      }
+    end
+  },
   'nvim-lua/plenary.nvim',           -- Common utilities
   'onsails/lspkind-nvim',            -- vscode-like pictograms
   'hrsh7th/cmp-buffer',              -- nvim-cmp source for buffer words
@@ -41,7 +53,6 @@ require('lazy').setup({
   'nvim-telescope/telescope.nvim',
   'nvim-telescope/telescope-file-browser.nvim',
   'windwp/nvim-autopairs',
-  'norcalli/nvim-colorizer.lua',
   ({
     "iamcco/markdown-preview.nvim",
     build = function() vim.fn["mkdp#util#install"]() end,
