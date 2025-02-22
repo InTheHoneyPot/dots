@@ -1,0 +1,17 @@
+theme = Everforest Dark - Hard
+font-family = Hack
+font-size = 12
+
+window-padding-x = 8
+window-padding-y = 8
+
+background-opacity = 0.9
+background-blur-radius = 20
+
+window-decoration = false
+
+shell-integration = fish
+
+keybind = ctrl+d=new_split:right
+keybind = ctrl+t=new_split:up
+keybind = ctrl+q=close_surface
