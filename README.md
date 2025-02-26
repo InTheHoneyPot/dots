@@ -19,7 +19,7 @@ HoneyPot's dotfiles
 ## Fedora (KDE Plasma) Desktop
 - [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
 - [Cava](https://github.com/karlstav/cava) - Audio Visualizer
-- [Kitty](https://github.com/kovidgoyal/kitty) - Terminal
+- [Ghostty](https://github.com/ghostty-org/ghostty) - Terminal
 - [Rofi](https://github.com/davatorium/rofi) - Application Launcher
 - [NeoFetch](https://github.com/dylanaraps/neofetch)
 - [sxhkd](https://github.com/baskerville/sxhkd) - Keybindings
