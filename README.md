@@ -29,7 +29,6 @@ Yukon's dotfiles
 - [Lazy](https://github.com/folke/lazy.nvim) - Plugin Manager
 - [Plenary](https://github.com/nvim-lua/plenary.nvim) - Asynchronus Programming Module
 - [Lsp-Config](https://github.com/neovim/nvim-lspconfig) - LSP Configuration
-- [Null-LS](https://github.com/jose-elias-alvarez/null-ls.nvim) - LSP Diagnostics & Code Actions
 - [Mason](https://github.com/williamboman/mason.nvim) - Package Manager for LSP servers, DAP servers, linters, and formatters
 - [Mason-Lsp-Config](https://github.com/williamboman/mason-lspconfig.nvim) - Integrate Mason & LSP Config
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Language Parsers, Queries and Modules (e.g. Highlighting)
@@ -40,11 +39,8 @@ Yukon's dotfiles
 - [Cmp-Buffer](https://github.com/hrsh7th/cmp-buffer) - Source for Buffer Words
 - [Cmp-Lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Source for LSP Completion
 - [ToggleTerm](https://github.com/akinsho/toggleterm.nvim) - Toggle Terminal
-- [Nvim Tree](https://github.com/nvim-tree/nvim-tree.lua) - VSCode File Tree
-- [Git](https://github.com/dinhhuy258/git.nvim) - VIM Fugitive Git Commands
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
 - [Autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs for Brackets, Quotes and Parenthesis
-- [Markdown-Preview](https://github.com/iamcco/markdown-preview.nvim) - Markdown Preview
 - [Alpha](https://github.com/goolord/alpha-nvim) - NVIM Greeter
 - [Gruvbox Colorscheme](https://github.com/ellisonleao/gruvbox.nvim) - Gruvbox Dark Colorscheme
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Statusline
