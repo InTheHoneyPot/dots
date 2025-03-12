@@ -48,7 +48,7 @@ return {
       dashboard.button("f", " " .. " Find file", "<cmd>Telescope find_files<CR>"),
       dashboard.button("r", " " .. " Recent files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("s", " " .. " Search string", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("c", " " .. " Find config", "<cmd>Telescope grep_string<CR>"),
+      dashboard.button("c", " " .. " Config", ":e ~/.config/nvim/init.lua <CR>"),
       dashboard.button("q", " " .. " Quit", ":qa<CR>"),
     }
 
@@ -59,7 +59,7 @@ return {
     dashboard.section.footer.val = footer()
 
     dashboard.section.footer.opts.hl = "Type"
-    dashboard.section.header.opts.hl = "Character"
+    dashboard.section.header.opts.hl = "Constant"
     dashboard.section.buttons.opts.hl = "Keyword"
 
     dashboard.opts.opts.noautocmd = true
