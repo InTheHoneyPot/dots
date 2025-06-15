@@ -22,7 +22,7 @@ Yukon's dotfiles
 - [Ghostty](https://github.com/ghostty-org/ghostty) - Terminal
 - [Rofi](https://github.com/davatorium/rofi) - Application Launcher
 - [NeoFetch](https://github.com/dylanaraps/neofetch)
-- [SDDM]([https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/]) - Login Screen
+- [SDDM](https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/) - Login Screen
 
 ## NVIM Setup
 - [Neovim](https://github.com/neovim/neovim) - IDE
@@ -41,7 +41,7 @@ Yukon's dotfiles
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
 - [Autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs for Brackets, Quotes and Parenthesis
 - [Alpha](https://github.com/goolord/alpha-nvim) - NVIM Greeter
-- [Everforest Colorscheme]([https://github.com/neanias/everforest-nvim]) - Everforest Colorscheme
+- [Everforest Colorscheme](https://github.com/neanias/everforest-nvim) - Everforest Colorscheme
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Statusline
 - [LspKind](https://github.com/onsails/lspkind.nvim) - VSCode Pictograms
 
