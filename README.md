@@ -16,13 +16,13 @@ Yukon's dotfiles
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
 - [Z for Fish](https://github.com/jethrokuan/z) - Directory jumping
 
-## Fedora (KDE Plasma) Desktop
+## Fedora 41 (KDE Plasma) Desktop
 - [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
 - [Cava](https://github.com/karlstav/cava) - Audio Visualizer
 - [Ghostty](https://github.com/ghostty-org/ghostty) - Terminal
 - [Rofi](https://github.com/davatorium/rofi) - Application Launcher
 - [NeoFetch](https://github.com/dylanaraps/neofetch)
-- [sxhkd](https://github.com/baskerville/sxhkd) - Keybindings
+- [SDDM]([https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/]) - Login Screen
 
 ## NVIM Setup
 - [Neovim](https://github.com/neovim/neovim) - IDE
@@ -38,11 +38,10 @@ Yukon's dotfiles
 - [Cmp](https://github.com/hrsh7th/nvim-cmp) - Completion
 - [Cmp-Buffer](https://github.com/hrsh7th/cmp-buffer) - Source for Buffer Words
 - [Cmp-Lsp](https://github.com/hrsh7th/cmp-nvim-lsp) - Source for LSP Completion
-- [ToggleTerm](https://github.com/akinsho/toggleterm.nvim) - Toggle Terminal
 - [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
 - [Autopairs](https://github.com/windwp/nvim-autopairs) - Autopairs for Brackets, Quotes and Parenthesis
 - [Alpha](https://github.com/goolord/alpha-nvim) - NVIM Greeter
-- [Gruvbox Colorscheme](https://github.com/ellisonleao/gruvbox.nvim) - Gruvbox Dark Colorscheme
+- [Everforest Colorscheme]([https://github.com/neanias/everforest-nvim]) - Everforest Colorscheme
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Statusline
 - [LspKind](https://github.com/onsails/lspkind.nvim) - VSCode Pictograms
 
