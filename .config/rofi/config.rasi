@@ -37,8 +37,9 @@ window {
     width: 450px;
     border-radius: @b-radius;
     background-color: @wbg-color;
-    border: @w-border;
+    border: #5B9BD5;
     border-color: @w-border-color;
+    background-image: url("/home/yukon/Pictures/wallpapers/default.png", height);
     padding: @w-padding;
 }
 
@@ -81,7 +82,7 @@ element normal.normal {
 }
 
 element alternate.normal {
-	background-color: @alt-color;
+	background-color: transparent;
 	text-color: @fg-color;
 }
 
@@ -99,3 +100,4 @@ message {
     background-color: red;
     border: 0px solid;
 }
+
