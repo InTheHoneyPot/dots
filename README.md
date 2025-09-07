@@ -23,6 +23,7 @@ Yukon's dotfiles
 - [Rofi](https://github.com/davatorium/rofi) - Application Launcher
 - [NeoFetch](https://github.com/dylanaraps/neofetch)
 - [SDDM](https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/) - Login Screen
+- [Plasma Panel Colorizor](https://github.com/luisbocanegra/plasma-panel-colorizer) - Transparent Panel
 
 ## NVIM Setup
 - [Neovim](https://github.com/neovim/neovim) - IDE
