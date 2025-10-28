@@ -1,171 +1,140 @@
---vim.lsp.set_log_level("debug")
 return {
   "neovim/nvim-lspconfig",
-  event = { "BufReadPre", "BufNewFile" },
+  ft = { "rust", "lua", "python", "c", "cpp" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
   },
   config = function()
-    
-    local nvim_lsp = require("lspconfig")
-    local protocol = require('vim.lsp.protocol')
+    -- Ensure signcolumn is visible
+    vim.opt.signcolumn = "yes"
 
-    local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
-    local enable_format_on_save = function(_, bufnr)
-      vim.api.nvim_clear_autocmds({ group = augroup_format, buffer = bufnr })
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        group = augroup_format,
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format({ bufnr = bufnr })
-        end,
-      })
-    end
+    -- Set up completion capabilities
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    -- Use an on_attach function to only map the following keys
-    -- after the language server attaches to the current buffer
+    -- Common on_attach function
     local on_attach = function(client, bufnr)
-      local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+      print("LSP attached: " .. client.name) -- Debug line
+      local opts = { noremap = true, silent = true, buffer = bufnr }
 
-      --Enable completion triggered by <c-x><c-o>
-      --local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
-      --buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+      -- Keymaps
+      vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+      vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
 
-      -- Mappings.
-      local opts = { noremap = true, silent = true }
-
-      -- See `:help vim.lsp.*` for documentation on any of the below functions
-      buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-      --buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-      buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-      --buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+      -- Format on save
+      if client.supports_method("textDocument/formatting") then
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          buffer = bufnr,
+          callback = function()
+            vim.lsp.buf.format({ bufnr = bufnr })
+          end,
+        })
+      end
     end
 
-    protocol.CompletionItemKind = {
-      '', -- Text
-      '', -- Method
-      '', -- Function
-      '', -- Constructor
-      '', -- Field
-      '', -- Variable
-      '', -- Class
-      'ﰮ', -- Interface
-      '', -- Module
-      '', -- Property
-      '', -- Unit
-      '', -- Value
-      '', -- Enum
-      '', -- Keyword
-      '﬌', -- Snippet
-      '', -- Color
-      '', -- File
-      '', -- Reference
-      '', -- Folder
-      '', -- EnumMember
-      '', -- Constant
-      '', -- Struct
-      '', -- Event
-      'ﬦ', -- Operator
-      '', -- TypeParameter
+    -- Configure diagnostic signs
+    local signs = {
+      { name = "DiagnosticSignError", text = " " },
+      { name = "DiagnosticSignWarn",  text = " " },
+      { name = "DiagnosticSignHint",  text = " " },
+      { name = "DiagnosticSignInfo",  text = " " },
     }
 
-    -- Set up completion using nvim_cmp with LSP source
-    local capabilities = require('cmp_nvim_lsp').default_capabilities(
-      vim.lsp.protocol.make_client_capabilities()
-    )
-
-    nvim_lsp.rust_analyzer.setup {
-      capabilities = capabilities,
-      on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
-        enable_format_on_save(client, bufnr)
-      end,
-      settings = {
-        Lua = {
-          diagnostics = {
-            -- Get the language server to recognize the `vim` global
-            globals = { 'vim' },
-          },
-
-          workspace = {
-            -- Make the server aware of Neovim runtime files
-            library = vim.api.nvim_get_runtime_file("", true),
-            checkThirdParty = false
-          },
-        },
-      },
-    }
-
-
-    nvim_lsp.lua_ls.setup {
-      capabilities = capabilities,
-      on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
-        enable_format_on_save(client, bufnr)
-      end,
-      settings = {
-        Lua = {
-          diagnostics = {
-            -- Get the language server to recognize the `vim` global
-            globals = { 'vim' },
-          },
-
-          workspace = {
-            -- Make the server aware of Neovim runtime files
-            library = vim.api.nvim_get_runtime_file("", true),
-            checkThirdParty = false
-          },
-        },
-      },
-    }
-
-    nvim_lsp.clangd.setup {
-      capabilities = capabilities,
-      on_attach = function(client, bufnr)
-        on_attach(client, bufnr)
-        enable_format_on_save(client, bufnr)
-      end,
-      settings = {
-        Lua = {
-          diagnostics = {
-            -- Get the language server to recognize the `vim` global
-            globals = { 'vim' },
-          },
-
-          workspace = {
-            -- Make the server aware of Neovim runtime files
-            library = vim.api.nvim_get_runtime_file("", true),
-            checkThirdParty = false
-          },
-        },
-      },
-    }
-
-
-    vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-      vim.lsp.diagnostic.on_publish_diagnostics, {
-        underline = true,
-        update_in_insert = false,
-        virtual_text = { spacing = 4, prefix = "●" },
-        severity_sort = true,
-      }
-    )
-
-    -- Diagnostic symbols in the sign column (gutter)
-    local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-    for type, icon in pairs(signs) do
-      local hl = "DiagnosticSign" .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+    for _, sign in ipairs(signs) do
+      vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
     end
 
+    -- Diagnostic configuration
     vim.diagnostic.config({
+      underline = true,
+      update_in_insert = false,
       virtual_text = {
-        prefix = '●'
+        spacing = 4,
+        prefix = '●',
       },
-      update_in_insert = true,
+      severity_sort = true,
       float = {
-        source = "always", -- Or "if_many"
+        source = "always",
+        border = "rounded",
+      },
+      signs = true,
+    })
+
+    -- Configure rust_analyzer
+    vim.lsp.config('rust_analyzer', {
+      cmd = { 'rust-analyzer' },
+      filetypes = { 'rust' },
+      root_markers = { 'Cargo.toml' },
+      capabilities = capabilities,
+      on_attach = on_attach,
+      settings = {
+        ['rust-analyzer'] = {
+          checkOnSave = {
+            enable = true,
+            command = "check", -- "clippy", Use clippy for more comprehensive checks
+          },
+          diagnostics = {
+            enable = true,
+            experimental = {
+              enable = true,
+            },
+          },
+          cargo = {
+            allFeatures = true,
+            loadOutDirsFromCheck = true,
+          },
+          procMacro = {
+            enable = true,
+          },
+        },
       },
     })
+
+    -- Configure lua_ls
+    vim.lsp.config('lua_ls', {
+      cmd = { 'lua-language-server' },
+      filetypes = { 'lua' },
+      root_markers = { '.luarc.json', '.luarc.jsonc', '.luacheckrc', '.stylua.toml',
+        'stylua.toml', 'selene.toml', 'selene.yml', '.git' },
+      capabilities = capabilities,
+      on_attach = on_attach,
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = { 'vim' },
+          },
+          workspace = {
+            library = vim.api.nvim_get_runtime_file("", true),
+            checkThirdParty = false,
+          },
+        },
+      },
+    })
+
+    -- Configure clangd
+    vim.lsp.config('clangd', {
+      cmd = { 'clangd' },
+      filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda', 'proto' },
+      root_markers = { '.clangd', '.clang-tidy', '.clang-format',
+        'compile_commands.json', 'compile_flags.txt',
+        'configure.ac', '.git' },
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- Configure pyright
+    vim.lsp.config('pyright', {
+      cmd = { 'pyright-langserver', '--stdio' },
+      filetypes = { 'python' },
+      root_markers = { 'pyproject.toml', 'setup.py', 'setup.cfg',
+        'requirements.txt', 'Pipfile', 'pyrightconfig.json', '.git' },
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- Enable the servers
+    vim.lsp.enable('rust_analyzer')
+    vim.lsp.enable('lua_ls')
+    vim.lsp.enable('clangd')
+    vim.lsp.enable('pyright')
   end,
 }
