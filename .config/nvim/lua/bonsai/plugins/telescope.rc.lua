@@ -51,7 +51,6 @@ return {
     map("n", ";t", function() builtin.help_tags() end, "Help Tags")
     map("n", ";;", function() builtin.resume() end, "Resume Telescope")
     map("n", ";e", function() builtin.diagnostics() end, "Diagnostics")
-    map("n", ";t", function() builtin.help_tags() end, "Help Tags")
 
     -- File Browser Shortcut
     map("n", ";b", function()
@@ -63,7 +62,5 @@ return {
         layout_config = { height = 40 },
       })
     end, "File Browser")
-
-    telescope.load_extension("file_browser")
   end,
 }

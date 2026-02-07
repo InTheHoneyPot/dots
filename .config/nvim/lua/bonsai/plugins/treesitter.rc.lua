@@ -3,7 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
-    "windwp/nvim-ts-autotag", -- Auto-close and auto-rename HTML/XML tags
+    "windwp/nvim-ts-autotag",
   },
 
   config = function()
@@ -22,23 +22,23 @@ return {
         "lua",
       },
 
-      sync_install = false,     -- Parsers installed asynchronously
-      auto_install = true,      -- Automatically install missing parsers
-      ignore_install = {},      -- Parsers you don't want to auto-install
+      sync_install = false, -- Parsers installed asynchronously
+      auto_install = true,  -- Automatically install missing parsers
+      ignore_install = {},  -- Parsers you don't want to auto-install
 
       highlight = {
-        enable = true,          -- Enable syntax highlighting
-        disable = {},           -- Add languages to disable highlighting
+        enable = true, -- Enable syntax highlighting
+        disable = {},  -- Add languages to disable highlighting
         additional_vim_regex_highlighting = false,
       },
 
       indent = {
-        enable = true,          -- Enable Treesitter-based indentation
-        disable = {},           -- Add languages to disable indentation
+        enable = true, -- Enable Treesitter-based indentation
+        disable = {},  -- Add languages to disable indentation
       },
 
       autotag = {
-        enable = true,          -- Enable automatic tag management (from nvim-ts-autotag)
+        enable = true, -- Enable automatic tag management (from nvim-ts-autotag)
       },
     })
   end,

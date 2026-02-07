@@ -6,7 +6,7 @@ return {
       style = "storm",
       transparent = true,
       on_highlights = function(hl, c)
-        local ocean = "#5A9E9A"
+        local ocean = "#50b084"
         hl["@spell"] = { fg = ocean }
         hl["@spell.markdown"] = { fg = ocean }
         hl["@markup"] = { fg = ocean }

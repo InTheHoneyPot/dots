@@ -52,6 +52,12 @@ return {
       dashboard.button("q", " " .. " Quit", ":qa<CR>"),
     }
 
+    dashboard.section.buttons.val[1].opts.hl = "Type"
+    dashboard.section.buttons.val[2].opts.hl = "Type"
+    dashboard.section.buttons.val[3].opts.hl = "Type"
+    dashboard.section.buttons.val[4].opts.hl = "Type"
+    dashboard.section.buttons.val[5].opts.hl = "Type"
+
     local function footer()
       return "Welcome Yukon"
     end
@@ -60,7 +66,6 @@ return {
 
     dashboard.section.footer.opts.hl = "Type"
     dashboard.section.header.opts.hl = "Constant"
-    dashboard.section.buttons.opts.hl = "Keyword"
 
     dashboard.opts.opts.noautocmd = true
     alpha.setup(dashboard.opts)

@@ -1,19 +1,12 @@
 return {
-  "neovim/nvim-lspconfig",
-  ft = { "rust", "lua", "python", "c", "cpp" },
-  dependencies = {
-    "hrsh7th/cmp-nvim-lsp",
-  },
+  "hrsh7th/cmp-nvim-lsp",
+  event = "VeryLazy",
   config = function()
-    -- Ensure signcolumn is visible
-    vim.opt.signcolumn = "yes"
-
     -- Set up completion capabilities
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
     -- Common on_attach function
     local on_attach = function(client, bufnr)
-      print("LSP attached: " .. client.name) -- Debug line
       local opts = { noremap = true, silent = true, buffer = bufnr }
 
       -- Keymaps
@@ -31,18 +24,6 @@ return {
       end
     end
 
-    -- Configure diagnostic signs
-    local signs = {
-      { name = "DiagnosticSignError", text = " " },
-      { name = "DiagnosticSignWarn",  text = " " },
-      { name = "DiagnosticSignHint",  text = " " },
-      { name = "DiagnosticSignInfo",  text = " " },
-    }
-
-    for _, sign in ipairs(signs) do
-      vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-    end
-
     -- Diagnostic configuration
     vim.diagnostic.config({
       underline = true,
@@ -53,10 +34,17 @@ return {
       },
       severity_sort = true,
       float = {
-        source = "always",
+        source = true,
         border = "rounded",
       },
-      signs = true,
+      signs = {
+        text = {
+          [vim.diagnostic.severity.ERROR] = " ",
+          [vim.diagnostic.severity.WARN] = " ",
+          [vim.diagnostic.severity.HINT] = " ",
+          [vim.diagnostic.severity.INFO] = " ",
+        },
+      },
     })
 
     -- Configure rust_analyzer
