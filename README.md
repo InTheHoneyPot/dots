@@ -25,19 +25,20 @@ Yukon's dotfiles
 - [SDDM](https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/) - Login Screen
 - [Plasma Panel Colorizer](https://github.com/luisbocanegra/plasma-panel-colorizer) - Transparent Panel
 
+
 ## NVIM Setup
 
 ### Core
-- [Neovim](https://github.com/neovim/neovim) - IDE
+- [Neovim](https://github.com/neovim/neovim) (0.11+) - IDE
 - [Lazy](https://github.com/folke/lazy.nvim) - Plugin Manager
 - [Plenary](https://github.com/nvim-lua/plenary.nvim) - Asynchronous Programming Module
 
 ### LSP & Language Support
-- [Lsp-Config](https://github.com/neovim/nvim-lspconfig) - LSP Configuration
+- Native `vim.lsp.config` + `vim.lsp.enable` 
 - [Mason](https://github.com/williamboman/mason.nvim) - Package Manager for LSP/DAP/Linters/Formatters
-- [Mason-Lsp-Config](https://github.com/williamboman/mason-lspconfig.nvim) - Mason + LSP Integration
 - [Mason-Tool-Installer](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim) - Auto-install Tools
 - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Syntax Highlighting & Parsing
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - Auto-close/Rename HTML Tags
 
 ### Completion & Snippets
 - [Cmp](https://github.com/hrsh7th/nvim-cmp) - Completion Engine
@@ -51,14 +52,18 @@ Yukon's dotfiles
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy Finder
 - [Telescope-File-Browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) - File Manager
 
+### Git
+- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
+- [Fugitive](https://github.com/tpope/vim-fugitive) - Git Commands
+
 ### Markdown
 - [Render-Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) - In-editor Rendering
 - [Markdown-Preview](https://github.com/iamcco/markdown-preview.nvim) - Browser Preview
 - [Vim-Pencil](https://github.com/preservim/vim-pencil) - Writing Mode
 
-### UI & Utilities
+### UI
 - [Alpha](https://github.com/goolord/alpha-nvim) - Startup Screen
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim) - Statusline
-- [Everforest](https://github.com/neanias/everforest-nvim) - Colorscheme
-- [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) - Git Decorations
+- [Tokyonight](https://github.com/folke/tokyonight.nvim) - Colorscheme (active)
+- [Everforest](https://github.com/neanias/everforest-nvim) - Colorscheme (available)
 - [Autopairs](https://github.com/windwp/nvim-autopairs) - Auto-close Brackets/Quotes
