@@ -16,7 +16,7 @@ Yukon's dotfiles
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
 - [Z for Fish](https://github.com/jethrokuan/z) - Directory jumping
 
-## Fedora 42 (KDE Plasma) Desktop
+## Fedora 44 (KDE Plasma) Desktop
 - [Fedora KDE Plasma](https://spins.fedoraproject.org/en/kde/)
 - [Cava](https://github.com/karlstav/cava) - Audio Visualizer
 - [Ghostty](https://github.com/ghostty-org/ghostty) - Terminal
