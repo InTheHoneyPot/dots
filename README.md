@@ -24,6 +24,7 @@ Yukon's dotfiles
 - [NeoFetch](https://github.com/dylanaraps/neofetch)
 - [SDDM](https://gitlab.com/Matt.Jolly/sddm-eucalyptus-drop/) - Login Screen
 - [Plasma Panel Colorizer](https://github.com/luisbocanegra/plasma-panel-colorizer) - Transparent Panel
+- [Calibre](https://www.calibre-ebook.com/) - E-reader
 
 
 ## NVIM Setup
